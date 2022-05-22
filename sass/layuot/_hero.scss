@@ -10,8 +10,33 @@
     background-size: auto;
 
     padding-top: 118px;
-    height: 400px;
+    padding-bottom: 118px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
     width: auto;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../images/hero-bg-tab.jpeg);
+                
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/hero-bg.jpg);
+    }
 }
 
 .hero__title {
@@ -24,4 +49,8 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+    }
 }
