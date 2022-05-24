@@ -644,6 +644,13 @@ body {
   margin: 0;
   list-style: none;
 }
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    margin-left: -15px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .our-team-name {
   font-style: normal;
@@ -667,6 +674,18 @@ body {
 @media screen and (min-width: 480px) {
   .our-team-list__item {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team-list__item {
+    width: calc(50% - 30px);
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team-list__item {
+    width: calc(25% - 30px);
+    margin-bottom: 0;
   }
 }
 
