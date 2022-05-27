@@ -873,6 +873,12 @@ body {
     padding-top: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 94px;
+    height: 252px;
+  }
+}
 
 .footer-info {
   text-align: center;
@@ -885,10 +891,22 @@ body {
     left: 76px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    max-width: 231px;
+    text-align: left;
+    left: 15px;
+  }
+}
 
 .footer-address {
   text-align: center;
   margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    text-align: left;
+  }
 }
 
 .address-text {
@@ -937,6 +955,11 @@ body {
     right: 89px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-soc-links {
+    left: 301px;
+  }
+}
 
 .footer-soc-header {
   font-weight: 700;
@@ -979,10 +1002,24 @@ body {
     padding-top: 247px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-sub {
+    max-width: 570px;
+    padding-top: 0px;
+    position: absolute;
+    top: 72px;
+    left: 597px;
+  }
+}
 
 .footer-sub-form {
   display: block;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-sub-form {
+    display: flex;
+  }
 }
 
 .footer-sub-header {
@@ -1035,6 +1072,13 @@ body {
     margin-left: 166px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-sub-email {
+    width: 358px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
 
 .footer-sub-btn {
   border: none;
@@ -1061,6 +1105,12 @@ body {
 @media screen and (min-width: 768px) {
   .footer-sub-btn {
     margin-left: 291px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-sub-btn {
+    margin-left: 12px;
+    margin-right: 0;
   }
 }
 

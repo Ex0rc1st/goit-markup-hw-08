@@ -5,11 +5,22 @@
     @media screen and (min-width: 768px) {
         padding-top: 247px;
         }
+    @media screen and (min-width: 1200px) {
+        max-width: 570px;
+        padding-top: 0px;
+        position: absolute;
+        top: 72px;
+        left: 597px;
+
+    }
 }
 
 .footer-sub-form {
     display: block;
     align-items: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .footer-sub-header {
@@ -68,6 +79,12 @@
         max-width: 450px;
         margin-left: 166px;
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
 }
 
 .footer-sub-btn {
@@ -99,6 +116,10 @@
 
     @media screen and (min-width: 768px) {
         margin-left: 291px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+        margin-right: 0;
     }
 }
 

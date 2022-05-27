@@ -6,6 +6,10 @@
     @media screen and (min-width: 768px) {
         padding-top: 0;
         }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        height: 252px;
+    }
 }
 
 .footer-info {
@@ -16,11 +20,19 @@
         top: 60px;
         left: 76px;
         }
+    @media screen and (min-width: 1200px) {
+        max-width: 231px;
+        text-align: left;
+        left: 15px;
+    }
 }
 
 .footer-address {
     text-align: center;
     margin-top: 20px;
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        }
 }
 
 .address-text {
@@ -66,6 +78,9 @@
             width: 206px;
             top: 65px;
             right: 89px;
+        }
+        @media screen and (min-width: 1200px) {
+            left: 301px;
         }
 }
 
