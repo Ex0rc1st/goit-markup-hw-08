@@ -3,10 +3,19 @@
     background-color: var(--background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        padding-top: 0;
+        }
 }
 
 .footer-info {
     text-align: center;
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        width: 232px;
+        top: 60px;
+        left: 76px;
+        }
 }
 
 .footer-address {
@@ -52,6 +61,12 @@
     margin-top: 20px;
     // margin-left: 70px;
     width: auto;
+    @media screen and (min-width: 768px) {
+            position: absolute;
+            width: 206px;
+            top: 65px;
+            right: 89px;
+        }
 }
 
 .footer-soc-header {
