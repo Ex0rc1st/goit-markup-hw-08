@@ -1,10 +1,12 @@
 .footer-sub {
-    margin-left: 93px;
-    margin-top: 12px;
+    // margin-left: 93px;
+    // margin-top: 12px;
+    padding-top: 60px;
 }
 
 .footer-sub-form {
-    display: flex;
+    display: block;
+    align-items: center;
 }
 
 .footer-sub-header {
@@ -17,11 +19,13 @@
     color: var(--background-white);
 
     margin-bottom: 20px;
+
+    text-align: center;
 }
 
 .footer-sub-email {
     border: none;
-    width: 358px;
+    width: auto;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -30,6 +34,10 @@
     background: #2F303A;
     padding: 15px 16px;
     color: var(--background-white);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -68,7 +76,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
-    margin-left: 12px;
+    margin-left: auto;
+    margin-right: auto;
 
     display: flex;
     align-items: center;

@@ -48,11 +48,9 @@ body {
   text-decoration: none;
 }
 
-@media screen and (min-width: 480px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -85,7 +83,6 @@ body {
 
 .logo {
   display: block;
-  margin-right: 93px;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -720,7 +717,7 @@ body {
   margin-bottom: 50px;
 }
 
-.our-clients {
+.our-clients-list {
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -865,12 +862,18 @@ body {
 }
 
 .footer {
+  width: 100vw;
   background-color: var(--background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+.footer-info {
+  text-align: center;
+}
+
 .footer-address {
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -903,10 +906,14 @@ body {
   margin-bottom: 9px;
 }
 
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
 .footer-soc-links {
-  margin-top: 12px;
-  margin-left: 70px;
-  width: 206px;
+  margin-top: 20px;
+  width: auto;
 }
 
 .footer-soc-header {
@@ -917,6 +924,7 @@ body {
   text-transform: uppercase;
   color: var(--background-white);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-soc-link {
@@ -941,22 +949,13 @@ body {
   margin-left: 10px;
 }
 
-.container-footer {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .footer-sub {
-  margin-left: 93px;
-  margin-top: 12px;
+  padding-top: 60px;
 }
 
 .footer-sub-form {
-  display: flex;
+  display: block;
+  align-items: center;
 }
 
 .footer-sub-header {
@@ -967,11 +966,12 @@ body {
   text-transform: uppercase;
   color: var(--background-white);
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer-sub-email {
   border: none;
-  width: 358px;
+  width: auto;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -980,6 +980,10 @@ body {
   background: #2F303A;
   padding: 15px 16px;
   color: var(--background-white);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-sub-email:hover, .footer-sub-email:focus {
@@ -1009,7 +1013,8 @@ body {
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-left: 12px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   text-align: center;
