@@ -958,6 +958,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-soc-links {
     left: 301px;
+    margin-top: 0;
   }
 }
 
@@ -1007,7 +1008,7 @@ body {
     max-width: 570px;
     padding-top: 0px;
     position: absolute;
-    top: 72px;
+    top: 70px;
     left: 597px;
   }
 }
@@ -1036,6 +1037,12 @@ body {
   .footer-sub-header {
     text-align: unset;
     margin-left: 282px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-sub-header {
+    text-align: left;
+    margin-left: 0;
   }
 }
 
