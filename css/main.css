@@ -92,6 +92,8 @@ body {
   color: var(--secondary-text-color);
   text-decoration: none;
   letter-spacing: 0.03em;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo__span {
@@ -330,6 +332,15 @@ body {
   list-style: none;
 }
 
+.mob-header {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .mob-header {
+    display: none;
+  }
+}
+
 .header {
   display: none;
   border-bottom: 1px solid var(--portfolio-items-border-color);
@@ -421,6 +432,10 @@ body {
 @media screen and (min-width: 1200px) {
   .header-contacts__link {
     margin-left: 50px;
+    font-size: 14px;
+    line-height: 1.14;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 

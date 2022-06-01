@@ -1,0 +1,14 @@
+.mob-menu-open-btn {
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    right: 10px;
+    top: 10px;
+
+    cursor: pointer;
+
+    &:hover {
+        fill: var(--action-color);
+    }
+}
