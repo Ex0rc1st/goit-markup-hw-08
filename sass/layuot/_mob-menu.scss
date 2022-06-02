@@ -1,0 +1,136 @@
+.mob-menu {
+    position: fixed;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    display: flex;
+    background: #FFFFFF;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+    }
+}
+
+.mob-menu-open-btn {
+    position: absolute;
+    background: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    right: 15px;
+    top: 10px;
+
+    cursor: pointer;
+
+    &:hover {
+        fill: var(--action-color);
+    }
+}
+
+.mob-menu-close-btn {
+    position: absolute;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 50%;
+    box-sizing: border-box;
+    right: 15px;
+    top: -30px;
+    cursor: pointer;
+
+    &:hover {
+        fill: var(--action-color);
+    }
+}
+
+.mob-menu-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.mob-menu-contacts {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.mob-menu-nav__item + .mob-menu-nav__item {
+    margin-top: 32px;
+}
+
+.mob-menu-nav__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+}
+
+.mob-menu-nav__link.cur {
+    color: var(--action-color);
+}
+
+.mob-menu-contacts__item {
+    margin-bottom: 32px;
+}
+
+.mob-menu-soc-links {
+    padding-left: 40px;
+    margin-top: 64px;
+}
+
+.mob-menu-soc-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+}
+
+.mob-menu-soc-item + .mob-menu-soc-item {
+    position: relative;
+    margin-left: 20px;
+}
+
+.mob-menu-soc-item + .mob-menu-soc-item::before {
+    content: '';
+    position: absolute;
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    left: -10px;
+}
+
+.mob-menu-contacts__link.phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+
+}
+
+.mob-menu-contacts__link.mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    color: #757575;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
