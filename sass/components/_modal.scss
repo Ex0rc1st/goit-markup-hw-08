@@ -11,7 +11,8 @@
 
 .modal {
     position: absolute;
-    width: 528px;
+    // width: 528px;
+    width: 450px;
     min-height: 581px;
     padding: 40px;
     background: #FFFFFF;
@@ -26,7 +27,7 @@
 }
 
 .modal-form {
-    min-width: 448px;
+    min-width: auto;
 }
 
 .modal-close-button {
@@ -135,13 +136,13 @@
 }
 
 .modal-field-checkbox {
-    padding-left: 12px;
+    // padding-left: 12px;
 }
 
 .modal-checkbox-label {
     position: relative;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--primary-text-color);
@@ -172,8 +173,8 @@
 }
 
 .modal-link {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
 
     color: var(--action-color);

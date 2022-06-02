@@ -138,7 +138,7 @@ body {
 
 .modal {
   position: absolute;
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   padding: 40px;
   background: #FFFFFF;
@@ -151,7 +151,7 @@ body {
 }
 
 .modal-form {
-  min-width: 448px;
+  min-width: auto;
 }
 
 .modal-close-button {
@@ -246,14 +246,10 @@ body {
   cursor: pointer;
 }
 
-.modal-field-checkbox {
-  padding-left: 12px;
-}
-
 .modal-checkbox-label {
   position: relative;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--primary-text-color);
@@ -282,8 +278,8 @@ body {
 }
 
 .modal-link {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   color: var(--action-color);
 }
@@ -600,14 +596,18 @@ body {
   text-align: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   height: auto;
   width: auto;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-x2.jpeg);
+    background-size: 480px 400px;
+  }
 }
 @media screen and (min-width: 480px) {
   .hero {
@@ -620,12 +620,24 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpeg);
   }
 }
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-x2.jpeg);
+    background-size: 768px 400px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-x2.jpeg);
+    background-size: 1600px 600px;
   }
 }
 
@@ -964,26 +976,49 @@ body {
   color: var(--primary-text-color);
 }
 
-.filter-list .filter-list__item + .filter-list__item {
-  margin-left: 8px;
+.filter-list__item {
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
 .filter-list {
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .filter-list {
+    padding-left: -30px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .content-list {
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-left: calc(-1 * var(--content-box-margin));
-  margin-top: calc(-1 * var(--content-box-margin));
+  display: block;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  list-style: none;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .content-list {
+    padding-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .content-list__item {
+  width: 100%;
   flex-basis: calc(33.3333333333% - 30px);
-  margin-top: var(--content-box-margin);
-  margin-left: var(--content-box-margin);
+  margin-bottom: 30px;
   background: var(--background-white);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1003,6 +1038,7 @@ body {
 .content-thumb {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .content-thumb-text {
