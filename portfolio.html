@@ -145,7 +145,12 @@
             <li class="content-list__item">
               <a class="link" href="">
                 <div class="content-thumb">
-                  <img src="./images/portfolio/1-450.jpeg" alt="Технокряк" />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/1-450.jpeg 1x, ./images/portfolio/1-450@2.jpg 2x"
+                    />
+                    <img src="./images/portfolio/1-450.jpeg" alt="Технокряк" />
+                  </picture>
                   <p class="content-thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -165,7 +170,6 @@
                   <img
                     src="./images/portfolio/design-new-orlean.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
                   />
                   <p class="content-thumb-text">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и

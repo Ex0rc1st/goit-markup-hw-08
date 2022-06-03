@@ -92,10 +92,7 @@
 
 .content-list__item {
     width: 100%;
-    flex-basis: calc(100% / 3 - 30px);
     margin-bottom: 30px;
-    // margin-top: var(--content-box-margin);
-    // margin-left: var(--content-box-margin);
     background: var(--background-white);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -104,6 +101,12 @@
                 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
+    @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 15px);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc(100% / 3 - 15px);
+    }
 }
 
 .content-text {
@@ -118,7 +121,7 @@
 .content-thumb {
     position: relative;
     overflow: hidden;
-
+    height: auto;
     width: 100%;
 }
 
