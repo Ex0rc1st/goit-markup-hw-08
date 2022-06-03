@@ -184,18 +184,27 @@
           </ul>
         </div>
       </section>
+
       <!--секция "чем мы занимаемся"-->
+
       <section class="our-work section">
         <div class="container">
           <h2 class="our-work__title">Чем мы занимаемся</h2>
           <ul class="our-work-list">
             <li class="our-work-list__item">
               <div class="our-work-list-item-thumb">
-                <img
-                  src="./images/programer-working-his-desk.jpg"
-                  alt="Пргограмист работает за своим рабочим столом"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/programer-working-his-desk.jpg    1x,
+                      ./images/programer-working-his-desk-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/programer-working-his-desk.jpg"
+                    alt="Пргограмист работает за своим рабочим столом"
+                  />
+                </picture>
                 <div class="our-work-list-item-content">
                   <p class="our-work__text">Десктопные приложения</p>
                 </div>
@@ -203,11 +212,18 @@
             </li>
             <li class="our-work-list__item">
               <div class="our-work-list-item-thumb">
-                <img
-                  src="./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones.jpg"
-                  alt="Дизайнеры веб интерфейса разрабатывают мобильное приложение"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones.jpg    1x,
+                      ./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones.jpg"
+                    alt="Дизайнеры веб интерфейса разрабатывают мобильное приложение"
+                  />
+                </picture>
                 <div class="our-work-list-item-content">
                   <p class="our-work__text">Мобильные приложения</p>
                 </div>
@@ -215,11 +231,18 @@
             </li>
             <li class="our-work-list__item">
               <div class="our-work-list-item-thumb">
-                <img
-                  src="./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet.jpg"
-                  alt="Художник веб-дизайнер работает с выбором цвета на графическом планшете"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet.jpg    1x,
+                      ./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet.jpg"
+                    alt="Художник веб-дизайнер работает с выбором цвета на графическом планшете"
+                  />
+                </picture>
                 <div class="our-work-list-item-content">
                   <p class="our-work__text">Дизайнерские решения</p>
                 </div>
@@ -237,11 +260,16 @@
           <ul class="our-team-list">
             <li class="our-team-list__item">
               <div class="thumb">
-                <img
-                  class="photo"
-                  src="./images/photo/igor_demyanenko.jpg"
-                  alt="Игорь Демьяненко"
-                />
+                <picture>
+                  <source
+                    srcset="./images/photo/imgigor.jpg 1x, ./images/photo/imgigor-2x.jpg 2x"
+                  />
+                  <img
+                    class="photo"
+                    src="./images/photo/igor_demyanenko.jpg"
+                    alt="Игорь Демьяненко"
+                  />
+                </picture>
               </div>
               <div class="our-team-card-content">
                 <p class="our-team-name">Игорь Демьяненко</p>
@@ -280,7 +308,12 @@
             </li>
             <li class="our-team-list__item">
               <div class="thumb">
-                <img class="photo" src="./images/photo/olga_repina.jpg" alt="Ольга Репина" />
+                <picture>
+                  <source
+                    srcset="./images/photo/imgolga.jpg 1x, ./images/photo/imgolga-2x.jpg 2x"
+                  />
+                  <img class="photo" src="./images/photo/olga_repina.jpg" alt="Ольга Репина" />
+                </picture>
               </div>
               <div class="our-team-card-content">
                 <p class="our-team-name">Ольга Репина</p>
@@ -319,7 +352,16 @@
             </li>
             <li class="our-team-list__item">
               <div class="thumb">
-                <img class="photo" src="./images/photo/nikolai_tarasov.jpg" alt="Николай Тарасов" />
+                <picture>
+                  <source
+                    srcset="./images/photo/imgnikolai.jpg 1x, ./images/photo/imgnikolai-2x.jpg 2x"
+                  />
+                  <img
+                    class="photo"
+                    src="./images/photo/nikolai_tarasov.jpg"
+                    alt="Николай Тарасов"
+                  />
+                </picture>
               </div>
               <div class="our-team-card-content">
                 <p class="our-team-name">Николай Тарасов</p>
@@ -358,7 +400,16 @@
             </li>
             <li class="our-team-list__item">
               <div class="thumb">
-                <img class="photo" src="./images/photo/mikhail_ermakov.jpg" alt="Михаил Ермаков" />
+                <picture>
+                  <source
+                    srcset="./images/photo/imgmiha.jpg 1x, ./images/photo/imgmiha-2x.jpg 2x"
+                  />
+                  <img
+                    class="photo"
+                    src="./images/photo/mikhail_ermakov.jpg"
+                    alt="Михаил Ермаков"
+                  />
+                </picture>
               </div>
               <div class="our-team-card-content">
                 <p class="our-team-name">Михаил Ермаков</p>
