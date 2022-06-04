@@ -50,7 +50,7 @@ body {
 
 .section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -335,12 +335,19 @@ body {
 .our-clients__title {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 33px;
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .our-team__title,
+.our-clients__title {
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .filter-list,
@@ -353,6 +360,7 @@ body {
 
 .mob-header {
   position: relative;
+  border-bottom: 1px solid var(--portfolio-items-border-color);
 }
 @media screen and (min-width: 768px) {
   .mob-header {
@@ -765,7 +773,7 @@ body {
   pointer-events: none;
   padding-top: 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .our-work {
     display: block;
     opacity: 1;
@@ -868,7 +876,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .our-team-list__item {
-    width: calc(25% - 15px);
+    width: calc(25% - 22px);
     margin-bottom: 0;
   }
 }
@@ -914,7 +922,12 @@ body {
 }
 
 .our-clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .our-clients__title {
+    margin-bottom: 50px;
+  }
 }
 
 .our-clients-list {
@@ -1020,6 +1033,11 @@ body {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 768px) {
+  .filter-list {
+    margin-bottom: 50px;
+  }
+}
 
 .content-list {
   display: block;
@@ -1054,7 +1072,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .content-list__item {
-    flex-basis: calc(33.3333333333% - 15px);
+    flex-basis: calc(33.3333333333% - 20px);
   }
 }
 
@@ -1204,6 +1222,11 @@ body {
   color: var(--background-white);
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-header {
+    text-align: left;
+  }
 }
 
 .footer-soc-link {
