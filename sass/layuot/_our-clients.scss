@@ -18,11 +18,11 @@
     width: calc(100% / 2 - 15px);
 
     @media screen and (min-width: 768px) {
-        width: calc(100% / 3 - 15px);
+        width: calc(100% / 3 - 20px);
     }
 
     @media screen and (min-width: 1200px) {
-        width: calc(100% / 6 - 15px);
+        width: calc(100% / 6 - 23px);
         margin-bottom: 0;
     }
 }
@@ -48,6 +48,3 @@
     }
 }
 
-// .our-clients-logo + .our-clients-logo {
-//     margin-left: 30px;
-// }

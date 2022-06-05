@@ -340,13 +340,14 @@ body {
   color: var(--secondary-text-color);
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .our-team__title,
 .our-clients__title {
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 
@@ -713,6 +714,11 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .peculiarities__text {
+    margin-bottom: 0;
+  }
+}
 
 .peculiarities__list {
   display: block;
@@ -747,7 +753,7 @@ body {
 @media screen and (min-width: 1200px) {
   .peculiarities__item {
     width: 270px;
-    width: calc(25% - 15px);
+    width: calc(25% - 22px);
     margin-bottom: 0;
   }
 }
@@ -943,12 +949,12 @@ body {
 }
 @media screen and (min-width: 768px) {
   .our-clients-logo {
-    width: calc(33.3333333333% - 15px);
+    width: calc(33.3333333333% - 20px);
   }
 }
 @media screen and (min-width: 1200px) {
   .our-clients-logo {
-    width: calc(16.6666666667% - 15px);
+    width: calc(16.6666666667% - 23px);
     margin-bottom: 0;
   }
 }
@@ -1033,7 +1039,7 @@ body {
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .filter-list {
     margin-bottom: 50px;
   }
@@ -1057,6 +1063,8 @@ body {
 }
 
 .content-list__item {
+  border: none;
+  border: 1px solid var(--portfolio-items-border-color);
   width: 100%;
   margin-bottom: 30px;
   background: var(--background-white);
@@ -1077,7 +1085,6 @@ body {
 }
 
 .content-text {
-  border: 1px solid var(--portfolio-items-border-color);
   box-sizing: border-box;
   padding-left: 24px;
   padding-right: 24px;
@@ -1111,6 +1118,17 @@ body {
 }
 .content-list__item:hover .content-thumb-text {
   transform: translateY(0%);
+}
+
+.content.section {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .content.section {
+    padding-top: 94px;
+    padding-bottom: 64px;
+  }
 }
 
 .footer {
@@ -1195,12 +1213,13 @@ body {
 }
 
 .footer-soc-links {
-  margin-top: 20px;
+  margin-top: 60px;
   width: auto;
 }
 @media screen and (min-width: 768px) {
   .footer-soc-links {
     position: absolute;
+    margin-top: 0;
     width: 206px;
     top: 65px;
     right: 89px;
@@ -1209,7 +1228,6 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-soc-links {
     left: 301px;
-    margin-top: 0;
   }
 }
 

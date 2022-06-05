@@ -70,18 +70,18 @@
 }
 
 .footer-soc-links {
-    margin-top: 20px;
+    margin-top: 60px;
     // margin-left: 70px;
     width: auto;
     @media screen and (min-width: 768px) {
             position: absolute;
+            margin-top: 0;
             width: 206px;
             top: 65px;
             right: 89px;
         }
         @media screen and (min-width: 1200px) {
             left: 301px;
-            margin-top: 0;
         }
 }
 
